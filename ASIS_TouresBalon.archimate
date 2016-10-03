@@ -100,6 +100,9 @@
     <element xsi:type="archimate:ApplicationService" id="e0e7bbec" name="Servicio de Correo"/>
     <element xsi:type="archimate:ApplicationService" id="72e852d1" name="Servicio Contabilidad"/>
     <element xsi:type="archimate:ApplicationService" id="4a4fdf38" name="Servicio Conciliación bancario"/>
+    <element xsi:type="archimate:ApplicationComponent" id="ad9c25d4" name="Legacy"/>
+    <element xsi:type="archimate:ApplicationInterface" id="a3de315d" name="Interface Legacy"/>
+    <element xsi:type="archimate:DataObject" id="e7e96435" name="Wrapper"/>
   </folder>
   <folder name="Technology" id="b528f95f" type="technology">
     <element xsi:type="archimate:Node" id="35349130" name="Servidor SMTP"/>
@@ -233,6 +236,7 @@
     <element xsi:type="archimate:AggregationRelationship" id="e7a987c4" source="deb77596" target="fec97f96"/>
     <element xsi:type="archimate:AggregationRelationship" id="3c151fbc" source="deb77596" target="a290a38e"/>
     <element xsi:type="archimate:AggregationRelationship" id="a07083fb" source="deb77596" target="7f775111"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="9642be81" source="ad9c25d4" target="a3de315d"/>
   </folder>
   <folder name="Views" id="a7915782" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" id="d8bd8661" name="Concepts And Relationships Viewpoint">
@@ -790,6 +794,18 @@
               <bounds x="276" y="36" width="120" height="55"/>
             </child>
           </child>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" id="40c2a490" name="New ArchiMate View">
+      <child xsi:type="archimate:DiagramObject" id="64b5a866" textAlignment="2" archimateElement="e7e96435">
+        <bounds x="225" y="272" width="340" height="149"/>
+        <child xsi:type="archimate:DiagramObject" id="2d7002e8" textAlignment="2" archimateElement="ad9c25d4">
+          <bounds y="48" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d5fdca23" source="2d7002e8" target="065c4f32" relationship="9642be81"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="065c4f32" textAlignment="2" targetConnections="d5fdca23" archimateElement="a3de315d">
+          <bounds x="204" y="48" width="120" height="55"/>
         </child>
       </child>
     </element>

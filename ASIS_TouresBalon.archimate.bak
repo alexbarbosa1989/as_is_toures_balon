@@ -81,7 +81,7 @@
     <element xsi:type="archimate:Contract" id="08d076a1" name="Contract"/>
     <element xsi:type="archimate:Representation" id="dbca1dea" name="Contrato"/>
     <element xsi:type="archimate:BusinessActor" id="8679207d" name="Gerente General"/>
-    <element xsi:type="archimate:BusinessActor" id="43763d32" name="Gerente Comercia"/>
+    <element xsi:type="archimate:BusinessActor" id="43763d32" name="Gerente Comercial"/>
     <element xsi:type="archimate:BusinessActor" id="b2e01195" name="Gerente Logística"/>
     <element xsi:type="archimate:BusinessActor" id="deb77596" name="Gerente Administrativo"/>
     <element xsi:type="archimate:BusinessRole" id="7ad096e4" name="Director de Mercadeo"/>
